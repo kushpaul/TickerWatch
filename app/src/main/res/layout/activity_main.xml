@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kushpaul.tickerwatch.MainActivity">
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="ActA"
+        android:text="ActA"
+        android:layout_marginTop="13dp"
+        android:id="@+id/buttonA"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="11dp" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="ActB"
+        android:text="ActB"
+        android:layout_alignBaseline="@+id/buttonA"
+        android:layout_alignBottom="@+id/buttonA"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="ActC"
+        android:text="ActC"
+        android:layout_alignBaseline="@+id/buttonA"
+        android:layout_alignBottom="@+id/buttonA"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:text="Here the fragment list will be placed for the rest of the activities. The top 3 buttons will be reservedfor what i believe to be the most important activities in the STock Ticker app. This app will be meant to View Stock info, Similar to yahoo stocks. "
+        android:layout_below="@+id/buttonA"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
