@@ -6,37 +6,54 @@
     android:layout_height="match_parent"
     tools:context="com.example.kushpaul.tickerwatch.MainActivity">
     <Button
-        android:layout_width="100dp"
+        android:layout_width="105dp"
         android:layout_height="50dp"
-        android:onClick="ActA"
-        android:text="ActA"
-        android:layout_marginTop="13dp"
+        android:onClick="ListView"
+        android:text="StockList"
         android:id="@+id/buttonA"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="11dp" />
+        android:layout_marginEnd="11dp"
+        android:layout_alignParentTop="true" />
     <Button
-        android:layout_width="100dp"
+        android:layout_width="105dp"
         android:layout_height="50dp"
-        android:onClick="ActB"
-        android:text="ActB"
+        android:onClick="ViewPager"
+        android:id="@+id/buttonB"
+        android:layout_marginStart="11dp"
+        android:text="News"
         android:layout_alignBaseline="@+id/buttonA"
         android:layout_alignBottom="@+id/buttonA"
         android:layout_alignParentStart="true" />
     <Button
-        android:layout_width="100dp"
+        android:layout_width="105dp"
         android:layout_height="50dp"
-        android:onClick="ActC"
-        android:text="ActC"
+        android:id="@+id/buttonC"
+        android:onClick="CustomDialog"
+        android:text="Trade"
         android:layout_alignBaseline="@+id/buttonA"
         android:layout_alignBottom="@+id/buttonA"
         android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/buttonD"
+        android:text="Interactive Graph"
+        android:layout_below="@id/buttonB"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/buttonE"
+        android:text="Percentage Gain"
+        android:onClick="Handle"
+        android:layout_below="@id/buttonD"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:text="Here the fragment list will be placed for the rest of the activities. The top 3 buttons will be reservedfor what i believe to be the most important activities in the STock Ticker app. This app will be meant to View Stock info, Similar to yahoo stocks. "
-        android:layout_below="@+id/buttonA"
-        android:layout_alignParentStart="true" />
+        android:layout_height="80dp"
+        android:layout_below="@id/buttonE"
+        android:text="00"
+        android:id="@+id/tex"
+        android:textSize="50sp"
+        android:textAlignment="center"/>
 
 
 </RelativeLayout>

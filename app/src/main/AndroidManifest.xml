@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ListViewer" />
+        <activity android:name=".PagerActivity" />
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".AnimationActivity"></activity>
     </application>
 
 </manifest>

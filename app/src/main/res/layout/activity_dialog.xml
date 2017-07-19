@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kushpaul.tickerwatch.DialogActivity">
+
+
+    <RadioGroup
+        android:id="@+id/activity_dialog_rdg"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <RadioButton
+            android:id="@+id/activity_dialog_rb1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="left|center_vertical"
+            android:text="Yes"/>
+        <RadioButton
+            android:id="@+id/activity_dialog_rb2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left|center_vertical"
+            android:text="No"/>
+        <RadioButton
+            android:id="@+id/activity_dialog_rb3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left|center_vertical"
+            android:text="Exit"/>
+        <RadioButton
+            android:id="@+id/activity_dialog_rb4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="left|center_vertical"
+            android:text="Custom"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/activity_dialog_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="OK"
+        />
+    <Button
+        android:id="@+id/activity_dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Cancel"/>
+
+
+</LinearLayout>
